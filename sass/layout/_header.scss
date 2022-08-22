@@ -1,111 +1,122 @@
-.header {
-  background-color: var(--headbg-color);
-  border: 1px solid var(--border-header);
-  padding-top: 16px;
-  padding-bottom: 16px;
-  // position: relative;
+@media screen and (max-width: 767px) {
+	.mobile-menu-open {
+		line-height: 0;
+		border: none;
+		background-color: transparent;
+
+		// transition: color var(--transition-hover);
+		&:hover .icon-burger,
+		&:focus .icon-burger {
+			fill: var(--accent-color);
+		}
+	}
+	.nav__list,
+	.header-contact {
+		display: none;
+	}
+	.header {
+		background-color: var(--headbg-color);
+		border: 1px solid var(--border-header);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-menu-open {
-  line-height: 0;
-  border: none;
-  background-color: transparent;
-  // transition: color var(--transition-hover);
-  &:hover .icon-burger,
-  &:focus .icon-burger {
-    fill: var(--accent-color);
-  }
-}
-
-@media screen and (min-width: 786px) {
-  .icon-burger {
-    display: none;
-  }
-}
-
-.nav__list,
-.header-contact {
-  display: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media screen and (min-width: 768px) {
-  .nav__list,
-  .header-contact {
-    display: block;
-  }
+	.header {
+		border: 1px solid var(--border-header);
+	}
+	.nav__list,
+	.header-contact {
+		display: block;
+	}
+	.mobile-menu-open {
+		display: none;
+	}
+	.nav__link {
+		@include font();
+		letter-spacing: 0.02em;
+		color: var(--another-color);
+		transition: color var(--transition-hover);
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+		&.current {
+			color: var(--accent-color);
+		}
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav__list {
+		display: flex;
+		align-items: center;
+		& .link {
+			display: block;
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+	}
+
+	.nav__item:not(:last-child) {
+		margin-right: 50px;
+	}
+	.logo {
+		margin-right: 87px;
+	}
+
+	.header-contact {
+		margin-left: auto;
+	}
+
+	.header-contact__link {
+		display: flex;
+		@include font();
+		letter-spacing: 0.02em;
+		color: var(--subtitle-color);
+		fill: var(--subtitle-color);
+		transition: color var(--transition-hover);
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+
+	.header-contact__icon {
+		transition: fill var(--transition-hover);
+		margin-right: 8px;
+		.header-contact__link:hover &,
+		.header-contact__link:focus & {
+			fill: var(--accent-color);
+		}
+	}
 }
 
-// .nav__link {
-//   @include font();
-//   letter-spacing: 0.02em;
-//   color: var(--another-color);
-//   transition: color var(--transition-hover);
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-//   &.current {
-//     color: var(--accent-color);
-//   }
-// }
+@media screen and (max-width: 1199px) {
+	.header-contact__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
 
-// .nav {
-//   display: flex;
-//   align-items: center;
-// }
+@media screen and (min-width: 1200px) {
+	.header-contact {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		gap: 50px;
+	}
 
-// .nav__list {
-//   display: flex;
-//   align-items: center;
-//   & .link {
-//     display: block;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-// }
-
-// .nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
-// .header-contact {
-//   display: flex;
-//   margin-left: auto;
-//   gap: 50px;
-//   & .link {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-// }
-
-// .header-container {
-//   @extend %align;
-// }
-
-// .header-contact__link {
-//   display: flex;
-//   @include font();
-//   letter-spacing: 0.02em;
-//   color: var(--subtitle-color);
-//   fill: var(--subtitle-color);
-//   transition: color var(--transition-hover);
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .header-contact__icon {
-//   transition: fill var(--transition-hover);
-//   margin-right: 10px;
-//   .header-contact__link:hover &,
-//   .header-contact__link:focus & {
-//     fill: var(--accent-color);
-//   }
-// }
+	.header-contact__icon {
+		margin-right: 10px;
+	}
+}

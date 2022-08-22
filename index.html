@@ -62,60 +62,61 @@
             >
           </li>
         </ul>
-        <button class="mobile-menu-open" type="button">
+        <button class="mobile-menu-open" type="button" data-menu-open>
           <svg class="icon-burger" width="40" height="40">
             <use href="./images/svg/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-            <button class="mobile-menu-close" type="button">
-              <svg class="mobile-menu-close__icon" width="40" height="40">
-                <use href="./images/svg/icons.svg#icon-close-black"></use>
-              </svg>
-            </button>
-            <ul class="mobile-menu-nav list">
-              <li class="mobile-menu-nav__item">
-                <a class="mobile-menu-nav__link current link" href="./index.html">Студия</a>
-              </li>
-              <li class="mobile-menu-nav__item">
-                <a class="mobile-menu-nav__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="mobile-menu-nav__item">
-                <a class="mobile-menu-nav__link link" href="/">Контакты</a>
-              </li>
-            </ul>
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="mobile-menu-close__icon" width="40" height="40">
+              <use href="./images/svg/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link current link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link link" href="/">Контакты</a>
+            </li>
+          </ul>
         
-            <ul class="mobile-menu-contact list">
-              <li class="mobile-menu-contact__item">
-                <a class="mobile-menu-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a
-                >
-              </li>
-              <li class="mobile-menu-contact__item">
-                <a
-                  class="mobile-menu-contact__mail link"
-                  href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-                >
+          <ul class="mobile-menu-contact list">
+            <li class="mobile-menu-contact__item">
+              <a class="mobile-menu-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a
+                class="mobile-menu-contact__mail link"
+                href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+              >
             
-              </li>
-            </ul>
+            </li>
+          </ul>
   
-            <ul class="mobile-menu-social list">
-              <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">Instagram</a></li>
-              <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">Twitter</a></li>
-              <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">Facebook</a></li>
+          <ul class="mobile-menu-social list">
+            <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">Instagram</a></li>
+            <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">Twitter</a></li>
+            <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">Facebook</a></li>
               <li class="mobile-menu-social__item"><a class="mobile-menu-social__link link" href="">LinkedIn</a></li>
-            </ul>
+          </ul>
       
+            
         </div>
       </div>
     </header>
     <!-- main -->
     <main>
       <!-- hero -->
-      <!-- <section class="section-hero section section-hero_img">
+      <section class="section-hero section section-hero_img">
         <div class="container">
           <h1 class="section-hero__title">
             Эффективные решения <br />
@@ -125,7 +126,7 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Attention to detail -->
       <!-- <section class="section">
         <div class="container">
@@ -621,6 +622,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
