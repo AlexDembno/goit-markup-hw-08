@@ -1,0 +1,34 @@
+.detail-list {
+  display: flex;
+  gap: 30px;
+}
+
+.detail-list__subtitle {
+  margin-bottom: 10px;
+}
+
+.detail-list__subtitle {
+  @include font($font-weight: 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 270px;
+  height: 16px;
+}
+
+.detail-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--subtitle-color);
+  width: 270px;
+  height: 75px;
+}
+
+.detail-list__icon {
+  @extend %align;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color-detail);
+  border-radius: 4px;
+}

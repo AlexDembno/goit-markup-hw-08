@@ -1,0 +1,16 @@
+@mixin font($font-weight: 500, $font-size: 14px, $line-height: 16px) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height / $font-size;
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

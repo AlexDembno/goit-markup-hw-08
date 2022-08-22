@@ -1,0 +1,119 @@
+.footer {
+  background-color: var(--footer-background);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container_align {
+  display: flex;
+  align-items: baseline;
+}
+
+.wrapper-address {
+  margin-right: 70px;
+}
+
+.logo_footer {
+  font-style: normal;
+  color: var(--headbg-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--headbg-color);
+  margin-bottom: 9px;
+}
+
+.footer-list__item:first-child {
+  margin-bottom: 9px;
+}
+
+.footer-list__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-color-footer);
+  transition: color var(--transition-hover);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.text-footer {
+  font-style: normal;
+  @include font($font-weight: 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headbg-color);
+  margin-bottom: 20px;
+}
+
+.link-team_footer {
+  background-color: var(--bg-color-icon-footer);
+  fill: var(--headbg-color);
+  transition: background-color var(--transition-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.form-footer {
+  margin-left: auto;
+}
+
+.form-footer-cursor {
+  cursor: pointer;
+}
+
+.input-footer {
+  padding: 15px 16px;
+  width: 358px;
+  border: 1px solid var(--border-form);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  margin-right: 12px;
+  background-color: var(--footer-background);
+  color: var(--contact-color-footer);
+  &::placeholder {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--contact-color-footer);
+  }
+}
+
+.btn-footer {
+  @extend %align;
+  padding: 10px 28px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn-footer__text {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-right: 10px;
+
+  color: var(--headbg-color);
+}
+
+.wrapper-form {
+  display: flex;
+}

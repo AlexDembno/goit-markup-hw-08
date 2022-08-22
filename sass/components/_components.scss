@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--another-color);
+}
+
+.title {
+  @include font(700, 36px, 42px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.title_hidden {
+  @include hidden;
+}
+
+.current {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font(700, 26px, 31px);
+  letter-spacing: 0.03em;
+}
+
+.list-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list-social__link {
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--headbg-color);
+  fill: var(--icon-fill);
+  transition: background-color var(--transition-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    & .list-social__icon,
+    & .list-social__icon {
+      fill: var(--headbg-color);
+    }
+  }
+}
+
+.list-social__icon {
+  transition: fill var(--transition-hover);
+}

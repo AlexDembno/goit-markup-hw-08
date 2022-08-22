@@ -1,0 +1,34 @@
+.section_doing {
+  padding-top: 0px;
+}
+.doing-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doing-list__item {
+  position: relative;
+}
+
+.doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.doing-list__wrapper-text {
+  position: absolute;
+  transform: translateY(-100%);
+  width: 100%;
+  background-color: var(--bg-color-doing);
+  z-index: 100;
+}
+
+.doing-list__text {
+  @include font($font-weight: 700);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px 82px;
+  color: var(--headbg-color);
+}
