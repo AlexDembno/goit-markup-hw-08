@@ -34,13 +34,12 @@
 }
 
 .portfolio-list__item {
+	display: flex;
 	background-color: var(--headbg-color);
 }
 
-.portfolio-list__item:not(:last-child) {
-	margin-bottom: 30px;
-}
 .portfolio-list__border {
+	flex-grow: 1;
 	padding: 20px 24px;
 	border: 1px solid var(--border-portfolio);
 }
@@ -85,7 +84,9 @@
 }
 
 .portfolio-list__link {
-	display: block;
+	display: flex;
+	flex-direction: column;
+
 	transition: box-shadow var(--transition-hover);
 	&:hover,
 	&:focus {
