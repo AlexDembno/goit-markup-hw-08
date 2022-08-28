@@ -598,6 +598,10 @@ body {
     margin-left: auto;
     gap: 50px;
   }
+  .header-contact .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .header-contact__icon {
     margin-right: 10px;
   }

@@ -111,6 +111,10 @@
 		align-items: center;
 		margin-left: auto;
 		gap: 50px;
+		& .link {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
 	}
 
 	.header-contact__icon {
